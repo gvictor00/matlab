@@ -43,7 +43,7 @@ maxVal = 170;
 im2 = im_gray > minVal & im_gray < maxVal;
 ```
 
-Cria uma imagem binária para ser usada como máscara na construção de uma segundo imagem. Para, no fim, combinar as imagens resultantes em um novo arquivo.
+Cria uma imagem binária para ser usada como máscara na construção de uma segundo imagem. Para, no fim, combinar as imagens resultantes em um novo arquivo.	
 
 ```matlab
 %Cria imagem binária para usar como mascara%
