@@ -32,3 +32,25 @@ Para negativar uma imagem, é necessário inverter as cores. `B(x,y) = L - A(x,y
 im_neg = imcomplement(im);
 ```
 
+## Exercício #3 - Operações relacionais e lógicas
+
+Consiste em combinar imagens através de operações relacionais e lógicas.
+
+```matlab
+% Trasnforma os pixeis, entre dois valores, em branco %
+minVal = 128;
+maxVal = 170;
+im2 = im_gray > minVal & im_gray < maxVal;
+```
+
+Cria uma imagem binária para ser usada como máscara na construção de uma segundo imagem. Para, no fim, combinar as imagens resultantes em um novo arquivo.
+
+```matlab
+%Cria imagem binária para usar como mascara%
+mask1 = im_gray < 128;
+
+% Multiplicação pixel a pixel por um fator da mascara, convertida para uint8
+factor1 = 0.2;
+im1 = factor1 * (im_gray .* uint8(mask1));
+```
+
