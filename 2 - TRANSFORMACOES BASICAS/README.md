@@ -51,3 +51,26 @@ im2 = imresize(im_gray, 0.05, 'bicubic');
 im3 = imresize(im_gray, [200 200], 'bicubic');
 ```
 
+
+
+## Exercício #3 - Recorte
+
+A operação de recorte consiste apenas em selecionar uma região de uma imagem para compor outra.
+
+```matlab
+im2 = imcrop(im1) % Usuário seleciona espaço do corte através do mouse
+im2 = imcrop(im1, [X Y L A]) % Coluna inicial, linha inicial, largura e altura
+```
+
+Para utilizar a `imcrop` sem passar as posições de corte, o usuário precisa selecionar o espaço a ser cortado. Dessa forma, será necessário escolher, através do **mouse** o espaço e depois **clicar duas vezes** dentro dessa região.
+
+Por exemplo:
+
+```matlab
+% Usuário faz o recorte através da GUI
+im1 = imcrop(im_gray);
+
+% Recorta em janela predefinida
+im2 = imcrop(im_gray,[20 50 100 100]);
+```
+
