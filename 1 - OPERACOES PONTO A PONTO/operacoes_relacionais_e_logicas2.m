@@ -1,4 +1,4 @@
-im = imread('praca.jpg');
+im = imread('../praca.jpg');
 
 im_gray = rgb2gray(im);
 

@@ -1,5 +1,5 @@
 % Le a imagem
-im = imread('praca.jpg');
+im = imread('../praca.jpg');
 
 % Retorna o complemento da imagem
 im_neg = imcomplement(im);

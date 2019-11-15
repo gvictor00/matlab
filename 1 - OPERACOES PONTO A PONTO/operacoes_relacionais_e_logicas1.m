@@ -1,5 +1,5 @@
 % Carrega a imagem %
-im = imread('praca.jpg');
+im = imread('../praca.jpg');
 
 % Transforma a imagem em tom de cinza %
 im_gray = rgb2gray(im);

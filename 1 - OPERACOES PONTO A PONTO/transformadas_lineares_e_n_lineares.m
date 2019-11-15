@@ -1,5 +1,5 @@
 % Le a imagem
-im = imread('praca.jpg');
+im = imread('../praca.jpg');
 
 % Transformacao linear
 c1 = 2;
