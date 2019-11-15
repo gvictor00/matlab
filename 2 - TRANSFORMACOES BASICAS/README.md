@@ -44,3 +44,10 @@ im2 = imresize(im1, [Nlin Ncol], method)
 * `method` representa o método de interpolação aplicado na escala;
 * `[Nlin Ncol]` representa, respectivamente, o número de linhas e colunas que a imagem deve ter após a operação de escala.
 
+Por exemplo:
+
+```matlab
+im2 = imresize(im_gray, 0.05, 'bicubic');
+im3 = imresize(im_gray, [200 200], 'bicubic');
+```
+
